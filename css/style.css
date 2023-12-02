@@ -87,9 +87,10 @@ a {
     justify-content: space-between!important;
     align-items: center;
 }
-/* added justify content to solve link problem  */
+/* added justify content and align items  to solve link problem  */
 .nav2 .collapse .navbar-nav {
     width: 50vw;
+    align-items: center;
     justify-content: space-between;
 
 }
