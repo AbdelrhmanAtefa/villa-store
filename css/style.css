@@ -64,6 +64,14 @@ a {
     color: #fff;
     font-size: 14px;
     transition: all .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
 }
 .nav1-right  li a i {
     font-size: 1rem;
@@ -79,6 +87,62 @@ a {
     justify-content: space-between!important;
     align-items: center;
 }
+/* added justify content to solve link problem  */
 .nav2 .collapse .navbar-nav {
     width: 50vw;
+    justify-content: space-between;
+
 }
+
+/* added by fatoh to solve nav links  note want to be remove from small screen at media */
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    max-width: 50vw;
+}
+
+
+.villa-slide{
+    position: relative;
+    background-image: url("../images/banner-01.jpg");
+    height: 70vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: slidebackground;
+    -webkit-animation: slidebackground;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes slidebackground{
+    33.33%{background-image: url("../images/banner-01.jpg");
+    }
+
+    66.66%{
+        background-image: url("../images/banner-02.jpg");
+    }
+    100%{
+        background-image: url("../images/banner-03.jpg");
+    }
+}
+.myslide{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%);
+    -moz-transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+    -o-transform: translate(0%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.myslide button{
+    width: fit-content;
+    padding:.5rem;
+}
+.myslide h1{
+    color: white;
+    text-transform: capitalize;
+}
+/* end of my edit fatoh */
