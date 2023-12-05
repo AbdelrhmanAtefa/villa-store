@@ -7,102 +7,162 @@
   -ms-box-sizing: border-box;
 }
 body {
-    font-family:'Poppins';
+  font-family: "Poppins";
 }
 :root {
-    --primary-color: #f15725;
-    --secondary-color: #868789;
+  --primary-color: #f15725;
+  --secondary-color: #868789;
 }
+
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none!important;
+  text-decoration: none !important;
 }
- p {
-    margin-bottom: 0!important;
- }
+p {
+  margin-bottom: 0 !important;
+}
 .nav1 {
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav1-left {
-    display: flex;
+  display: flex;
 }
+
 .nav1-left .left-under {
-    display: flex;
-    margin-right: 20px;
-    align-items: center;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
 }
 .nav1-left .left-under .fa-envelope {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-right: 10px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 .nav1-left .left-under p {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 .nav1-right {
-    margin-top: 20px;
-    display: flex;
+  margin-top: 20px;
+  display: flex;
 }
 .nav1-right li {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .nav1-right a {
-    margin-left: 10px;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #cdcdcd;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    font-size: 14px;
-    transition: all .3s;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
+  margin-left: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #cdcdcd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
-.nav1-right  li a i {
-    font-size: 1rem;
-    color: white;
+.nav1-right li a i {
+  font-size: 1rem;
+  color: white;
 }
 .nav1-right a:hover {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
-.nav2 {
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between!important;
-    align-items: center;
+@media (max-width: 768px) {
+  .nav1 {
+    flex-direction: column;
+    height: 12vh;
+  }
 }
-/* added justify content and align items  to solve link problem  */
-.nav2 .collapse .navbar-nav {
-    width: 50vw;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-/* added by fatoh to solve nav links  note want to be remove from small screen at media */
-.navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    max-width: 50vw;
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 4px;
+  color: black;
+  text-transform: uppercase;
 }
 
+.navbar-collapse .nav-item {
+  margin-left: 40px;
+}
+.navbar-collapse .nav-item .nav-link {
+    color: black;
+}
+.navbar-collapse .nav-item .active {
+    color: var(--primary-color)!important;
+}
+.calender {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.calender .fa-calendar {
+  font-size: 15px;
+  background-color: var(--primary-color);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+.calender button {
+  background-color: black;
+  padding: 10px;
+  text-align: end;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+}
+.calender button a {
+  color: white;
+  margin-right: 15px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.section1 .swiper-pagination {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+  margin-bottom: 30px ;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet  {
+  background-color: var(--primary-color);
+}
+.section1 .swiper-wrapper .swiper-slide img {
+  width: 100vw;
+}
+/* 
 .villa-slide{
     position: relative;
     background-image: url("../images/banner-01.jpg");
@@ -113,8 +173,8 @@ a {
     -webkit-animation: slidebackground;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-}
-@keyframes slidebackground{
+} */
+/* @keyframes slidebackground{
     33.33%{background-image: url("../images/banner-01.jpg");
     }
 
@@ -124,8 +184,8 @@ a {
     100%{
         background-image: url("../images/banner-03.jpg");
     }
-}
-.myslide{
+} */
+/* .myslide{
     position: absolute;
     top: 50%;
     left: 5%;
@@ -145,5 +205,5 @@ a {
 .myslide h1{
     color: white;
     text-transform: uppercase;
-}
+} */
 /* end of my edit fatoh */

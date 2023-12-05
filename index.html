@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Villa Store</title>
-    <link rel="shortcut icon" href="images/property-03.jpg" type="jpg" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/0ef65a9588.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="nav1">
-            <div class="nav1-left">
-              <div class="left-under">
-                <i class="fa-solid fa-envelope"></i>
-                <p>info@company.com</p>
-              </div>
-              <div class="left-under">
-                <i class="fa-solid fa-envelope"></i>
-                <p>info@company.com</p>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Villa Store</title>
+  <link rel="shortcut icon" href="images/property-03.jpg" type="jpg" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/0ef65a9588.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="nav1">
+          <div class="nav1-left">
+            <div class="left-under">
+              <i class="fa-solid fa-envelope"></i>
+              <p>info@company.com</p>
             </div>
-            <ul class="nav1-right">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-            </ul>
+            <div class="left-under">
+              <i class="fa-solid fa-envelope"></i>
+              <p>info@company.com</p>
+            </div>
           </div>
+          <ul class="nav1-right">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <div class="nav2">
-          <div>
-            <a class="navbar-brand" href="#">Villa</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Properties</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Property Details</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <i class="fa-solid fa-calendar"></i>
-                <a class="nav-link" href="#">
-                  <p>Schedule a visit</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+    </div>
+  </header>
+  <hr>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="#">Villa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">property Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="calender">
+          <i class="fa-solid fa-calendar"></i>
+          <button>
+            <a href="">
+              Schedule a visit
+            </a> 
+          </button>
         </div>
       </div>
-    </nav>
-    <section class="villa-slide">
-      <div class="myslide">
-        <button>Toronto, <span style="color: red">Canada</span></button>
-        <h1>
-          HURRY! <br />
-          GET ThE BEST <br />
-          villa For YOu
-        </h1>
+    </div>
+  </nav>
+  <section class="section1"> 
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/banner-01.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/banner-02.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/banner-03.jpg" alt=""></div>
       </div>
-    </section>
-    <!-- end of my edit fatoh  -->
+      <div class="  "></div>
+    </div>
+  </section>  
     <script src="JS/bootstrap.bundle.js"></script>
-    <script src="JS/main.js"></script>
-  </body>
+  <script src="JS/main.js"></script>
+</body>
+
 </html>
