@@ -58,3 +58,20 @@ var swiper = new Swiper('.swiper', {
   // Enable debugger
   debugger: true,
 });
+
+const btn = document.querySelector(".button")
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 200) {
+    btn.classList.add('show');
+  }else {
+    btn.classList.remove('show')
+  }
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top : 0,
+      left: 0,
+      behavior: "smooth"
+      })
+  })
+})
